@@ -43,21 +43,6 @@ header {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 800px) {
-    header {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .sitemap {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-    }
-}
-
-
 .sitemap {
     display: flex;
     gap: 20px;
@@ -81,6 +66,11 @@ nav>ul {
 
 nav li {
     font-size: calc(9px + (14 - 9) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 100;
+}
+
+#home {
+    font-weight: 900;
 }
 
 
@@ -151,6 +141,21 @@ main>section {
     object-fit: cover;
 }
 
-.gallery>img:hover {
+.img-container>img:hover {
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sitemap {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
 }
